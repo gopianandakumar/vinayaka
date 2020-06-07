@@ -1,0 +1,23 @@
+<h1>Result Page.</h1>
+
+<h3>Entered para contains {{length}} of words</h3>
+
+<hr />
+<b>all words count</b>
+
+{% for a,b in abc.items %} {{a}}={{b}} {% endfor %}
+
+<hr />
+<ol type="1">
+  {% for key, value in abc.items %}
+
+  <li>{{key}}:{{value}}</li>
+  {% endfor %}
+</ol>
+<hr />
+<b>Ascending Order</b>
+<ol type="1">
+  {% for key, value in cba %}
+  <li>{{key}}:{{value}}</li>
+  {% endfor %}
+</ol>
